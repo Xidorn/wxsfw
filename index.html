@@ -10,7 +10,7 @@
     <meta property="og:title" content="王先生服务 - 专注于网站建设与营销推广服务">
     <meta property="og:description" content="王先生服务，提供网站建设、域名注册与DNS管理、服务器运维、网站运营、SEO优化、SEM营销推广等专业服务。">
     <meta property="og:image" content="https://www.wangxiansheng.com/images/logo.png">
-    <meta property="og:url" content="https://wxsfw.com">
+    <meta property="og:url" content="https://www.wxsfw.com">
     <meta name="twitter:card" content="summary_large_image">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -149,16 +149,19 @@
         
         .section-title {
             position: relative;
-            display: inline-block;
+            display: block;
             margin-bottom: 3rem;
             color: var(--text-light);
+            text-align: center;
+            width: 100%;
         }
         
         .section-title::after {
             content: '';
             position: absolute;
             bottom: -10px;
-            left: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 60px;
             height: 3px;
             background: linear-gradient(to right, var(--primary-color), var(--accent-color));
@@ -274,7 +277,7 @@
     <main>
         <section class="py-5 my-5">
             <div class="container">
-                <h2 class="mb-4 text-center section-title">服务内容</h2>
+                <h2 class="section-title">服务内容</h2>
                 <div class="row g-4">
                     <div class="col-md-4 animate-fade-in">
                         <div class="service-card">
@@ -336,7 +339,7 @@
 
         <section class="py-5" style="background-color: var(--secondary-color);">
             <div class="container text-center">
-                <h2 class="mb-4 section-title">联系方式</h2>
+                <h2 class="section-title">联系方式</h2>
                 <div class="contact-info">
                     <p class="mb-3 d-flex align-items-center justify-content-center">
                         <i class="fas fa-envelope contact-icon"></i>
